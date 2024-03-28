@@ -1,0 +1,36 @@
+site_name: Histoires de l'
+theme:
+  language: fr
+  palette:
+    primary: blue grey
+  name: material
+  features:
+    - navigation.footer
+    - navigation.path
+    - navigation.expand
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.top
+    - content.tooltips
+plugins:
+  - search
+  - social
+  - tags
+  - blog:
+      draft: true
+      draft_if_future_date: true
+      blog_toc: true
+      blog_dir: .
+      post_dir: "{blog}/articles"
+      post_url_date_format: yyyy/MM/dd
+      post_date_format: full
+      archive: true
+      archive_toc: false
+      archive_url_format: archive/{date}
+
+markdown_extensions:
+  - abbr
+  - attr_list
+  - pymdownx.snippets
