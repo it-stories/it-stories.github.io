@@ -16,7 +16,6 @@ theme:
     - content.tooltips
 plugins:
   - search
-  - social
   - tags
   - blog:
       draft: true
